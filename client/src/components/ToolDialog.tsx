@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { CATEGORIES, type ToolCategory, type ToolEntry } from "@/types/tool";
+import { CATEGORIES, type ToolCategory, type ToolEntry } from "@shared/const";
 import { Plus, Tags, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
