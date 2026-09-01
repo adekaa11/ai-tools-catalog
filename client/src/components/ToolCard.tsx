@@ -4,8 +4,7 @@
  */
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import type { ToolEntry } from "@/types/tool";
-import { CATEGORY_META } from "@/types/tool";
+import { CATEGORY_META, type ToolEntry } from "@shared/const";
 import {
   Copy,
   ExternalLink,
