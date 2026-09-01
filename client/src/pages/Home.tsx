@@ -1,5 +1,5 @@
 /**
- * Design note — Catalytic Workshop: asymmetric catalogue layout, warm editorial
+ * Desi gn note — Catalytic Workshop: asymmetric catalogue layout, warm editorial
  * surfaces, graphite text and a single vermilion action accent define this page.
  */
 import { AppLogo } from "@/components/AppLogo";
