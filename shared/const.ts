@@ -7,7 +7,7 @@ export const CATEGORY_META: Record<string, { label: string; icon?: string }> = {
   code: { label: "Coding & Dev" },
   audio: { label: "Audio & Music" },
   video: { label: "Video & Motion" },
-  3d: { label: "3D & World" },
+  "3d": { label: "3D & World" },
   business: { label: "Business & Productivity" },
   other: { label: "Other Tools" },
 };
