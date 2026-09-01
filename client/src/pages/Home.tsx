@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useTheme } from "@/contexts/ThemeContext";
 import { loadTools, saveTools } from "@/lib/toolStorage";
-import { CATEGORIES, CATEGORY_META, type ToolCategory, type ToolEntry } from "../../../shared/const";
+import { CATEGORIES, CATEGORY_META, type ToolCategory, type ToolEntry } from "@shared/const";
 import { nanoid } from "nanoid";
 import {
   Archive,
