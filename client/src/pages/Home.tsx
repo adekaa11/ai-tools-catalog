@@ -25,7 +25,6 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
-import emptyStateImg from "../public/empty-state.png";
 
 type ToolDraft = Omit<ToolEntry, "id" | "createdAt">;
 type CategoryFilter = "Все" | ToolCategory;
@@ -200,7 +199,7 @@ export default function Home() {
               </div>
             ) : (
               <div className="empty-catalog relative overflow-hidden p-7 sm:p-10">
-                <img src={emptyStateImg} alt="Ничего не найдено" className="pointer-events-none absolute right-4 top-4 h-48 w-48 object-contain sm:right-8 sm:top-6" />
+                <img src="https://raw.githubusercontent.com/shadcn-ui/ui/main/apps/www/public/og.png" alt="Ничего не найдено" className="pointer-events-none absolute right-4 top-4 h-48 w-48 object-contain opacity-20 sm:right-8 sm:top-6" />
                 <div className="relative max-w-md">
                   <p className="mb-3 font-mono text-[0.62rem] font-medium uppercase tracking-[0.16em] text-[#C64221] dark:text-[#FF9B7D]"><span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-[#E9532D]" /> Новая вкладка</p>
                   <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#E9532D]/10 text-[#C64221] dark:text-[#FF9B7D]"><Command className="h-4 w-4" /></div>
