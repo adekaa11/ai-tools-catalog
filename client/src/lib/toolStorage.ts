@@ -1,4 +1,4 @@
-import type { ToolEntry } from "@/types/tool";
+import type { ToolEntry } from "@shared/const";
 
 const STORAGE_KEY = "catalyst-ai-tools-v1";
 
