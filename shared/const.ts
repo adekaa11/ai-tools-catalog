@@ -15,12 +15,12 @@ export const CATEGORIES = [
 export type ToolCategory = (typeof CATEGORIES)[number];
 
 export const CATEGORY_META: Record<string, { label: string; icon?: string }> = {
-  text: { label: "Text & Writing" },
-  image: { label: "Image & Design" },
-  code: { label: "Coding & Dev" },
-  audio: { label: "Audio & Music" },
-  video: { label: "Video & Motion" },
-  "3d": { label: "3D & World" },
-  business: { label: "Business & Productivity" },
-  other: { label: "Other Tools" },
+  text: { label: "Текст" },
+  image: { label: "Изображения" },
+  code: { label: "Генерация кода" },
+  audio: { label: "Аудио" },
+  video: { label: "Видео" },
+  "3d": { label: "3D и Графика" },
+  business: { label: "Продуктивность" },
+  other: { label: "API-провайдеры" },
 };
