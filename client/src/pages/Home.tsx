@@ -1,5 +1,5 @@
 /**
- * Desi gn note — Catalytic Workshop: asymmetric catalogue layout, warm editorial
+ * Design note — Catalytic Workshop: asymmetric catalogue layout, warm editorial
  * surfaces, graphite text and a single vermilion action accent define this page.
  */
 import { AppLogo } from "@/components/AppLogo";
@@ -143,8 +143,6 @@ export default function Home() {
 
         <main className="min-w-0 flex-1">
           <header className="relative isolate overflow-hidden border-b border-border/70 px-5 py-6 sm:px-8 lg:px-12 lg:py-9">
-            <img src="/manus-storage/catalyst-orbit-light_cb8eb3d5.png" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right opacity-50 dark:hidden" />
-            <img src="/manus-storage/catalyst-orbit-dark_9187ac30.png" alt="" className="absolute inset-0 -z-10 hidden h-full w-full object-cover object-right opacity-65 dark:block" />
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/95 to-background/45 dark:via-background/92" />
             <div className="orbital-map pointer-events-none absolute -right-12 top-1/2 hidden h-64 w-[480px] -translate-y-1/2 opacity-80 lg:block" aria-hidden="true">
               <span className="orbital-ring orbital-ring-one" /><span className="orbital-ring orbital-ring-two" /><span className="orbital-ring orbital-ring-three" />
@@ -201,7 +199,7 @@ export default function Home() {
               </div>
             ) : (
               <div className="empty-catalog relative overflow-hidden p-7 sm:p-10">
-                <img src="/manus-storage/catalyst-empty-state_89ebdad0.png" alt="" className="pointer-events-none absolute -right-10 -top-16 h-56 w-56 object-contain opacity-70 dark:opacity-35 sm:right-4 sm:top-0" />
+                <img src="/empty-state.png" alt="Ничего не найдено" className="pointer-events-none absolute right-4 top-4 h-48 w-48 object-contain sm:right-8 sm:top-6" />
                 <div className="relative max-w-md">
                   <p className="mb-3 font-mono text-[0.62rem] font-medium uppercase tracking-[0.16em] text-[#C64221] dark:text-[#FF9B7D]"><span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-[#E9532D]" /> Новая вкладка</p>
                   <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#E9532D]/10 text-[#C64221] dark:text-[#FF9B7D]"><Command className="h-4 w-4" /></div>
