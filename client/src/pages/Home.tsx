@@ -15,6 +15,7 @@ import { nanoid } from "nanoid";
 import {
   Archive,
   Command,
+  FolderArchive,
   LaptopMinimal,
   Moon,
   Plus,
@@ -198,8 +199,10 @@ export default function Home() {
                 {filteredTools.map((tool) => <ToolCard key={tool.id} tool={tool} onEdit={(item) => { setEditingTool(item); setDialogOpen(true); }} onDelete={handleDelete} />)}
               </div>
             ) : (
-              <div className="empty-catalog relative overflow-hidden p-7 sm:p-10">
-                <img src="https://raw.githubusercontent.com/shadcn-ui/ui/main/apps/www/public/og.png" alt="Ничего не найдено" className="pointer-events-none absolute right-4 top-4 h-48 w-48 object-contain opacity-20 sm:right-8 sm:top-6" />
+              <div className="empty-catalog relative overflow-hidden rounded-2xl border border-border/80 bg-card/60 p-7 sm:p-10">
+                <div className="pointer-events-none absolute -right-6 -top-6 flex h-44 w-44 items-center justify-center rounded-3xl bg-[#E9532D]/5 text-[#E9532D]/30 dark:text-[#FF8D6C]/20 sm:right-4 sm:top-2">
+                  <FolderArchive className="h-28 w-28 stroke-[1.2]" />
+                </div>
                 <div className="relative max-w-md">
                   <p className="mb-3 font-mono text-[0.62rem] font-medium uppercase tracking-[0.16em] text-[#C64221] dark:text-[#FF9B7D]"><span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-[#E9532D]" /> Новая вкладка</p>
                   <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#E9532D]/10 text-[#C64221] dark:text-[#FF9B7D]"><Command className="h-4 w-4" /></div>
